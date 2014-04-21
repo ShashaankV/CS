@@ -45,7 +45,7 @@ m_=dm:dm:mmax; %substitute your sampling scheme
     
 ind=0;
 for m=m_
-    ind=ind+1
+    ind=ind+1;
     indm=randperm(mg,m); %sample random subset of subjects
     %uncomment next two lines if above fails due to older version of MATLAB 
 %     indm=randperm(mg); 

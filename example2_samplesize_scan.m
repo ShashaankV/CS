@@ -6,7 +6,7 @@
 clc
 clear
 
-GDpath='./GenomicData'; %define the path for the GenomicData folder, the correlation matrix will be unpacked here
+GDpath='../GD'; %define the path for the GenomicData folder, the correlation matrix will be unpacked here
 unpack_chr22_SNPcorrelations(GDpath)
 clear
 
@@ -49,7 +49,7 @@ m_=dm:dm:mmax; %substitute your sampling scheme
     
 ind=0;
 for m=m_
-    ind=ind+1
+    ind=ind+1;
     indm=randperm(mg,m); %sample random subset of subjects
     %uncomment next two lines if above fails due to older version of MATLAB 
 %     indm=randperm(mg); 
